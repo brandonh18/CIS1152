@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Lab 2, Arithmatic Lab
  *
@@ -9,7 +8,6 @@
  * @author YOUR_NAME <YOUR_EMAIL_ADDRESS@vtc.edi>
  * @since 20150120
  */
-
 /**
  * Outputs to the console a truncated float.
  *
@@ -18,34 +16,45 @@
  *
  * @param $float_value
  */
-
 define('GRAVITY', 9.8);
-
 function truncateFloat($float_value)
 {
-
+	$$float_value = ($float_value * 100) / (100);
+echo $float_value;
 }
-
 /**
  * @param $degrees_f
  */
 function farenheit2Kelvin($degrees_f)
 {
-
+$degrees_k = ($degrees_f - 32) * (5/9) + 273.15;
+echo $degrees_k;
+	
 }
-
 /**
  * @param $area
  */
 function dodecahedronVolume($area)
-{
-
+{$volume = (((15 + 7) * sqrt(5)) / 4 ) * pow($area,3);
+	echo $volume;
+	
 }
-
 /**
  * @param $height
  */
 function impactVelocity($height)
 {
-
+	$velocity = sqrt((2)*(GRAVITY)*($height)); 
+	echo $velocity;
+	
+	
 }
+truncateFloat(12.2515151);
+echo "<br>";
+farenheit2Kelvin(12);
+echo "<br>";
+dodecahedronVolume(36);
+echo "<br>";
+dodecahedronVolume(87);
+
+
