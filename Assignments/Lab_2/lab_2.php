@@ -19,7 +19,7 @@
 define('GRAVITY', 9.8);
 function truncateFloat($float_value)
 {
-	$$float_value = ($float_value * 100) / (100);
+	$float_value = ($float_value * 100) / (100);
 echo $float_value;
 }
 /**
@@ -55,6 +55,6 @@ farenheit2Kelvin(12);
 echo "<br>";
 dodecahedronVolume(36);
 echo "<br>";
-dodecahedronVolume(87);
+impactVelocity(87);
 
 
