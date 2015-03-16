@@ -53,6 +53,6 @@ class MathFun
      */
     function impactVelocity($height)
     {
-        return sqrt(2 * GRAVITY * $height);
+        return sqrt(2 * self::GRAVITY * $height);
     }
 }

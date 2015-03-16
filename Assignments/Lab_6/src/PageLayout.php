@@ -22,7 +22,26 @@
 namespace VTC\Lab_5\PageLayout;
 
 class PageLayout
+
+
 {
+	
+public static function formResults ($truncateFloat, $ferenheight2Kelvin, $dodecahedronVolume, $impactVelocity) {
+		$form_result = "";
+		if (!empty($trucateFloatResult)) {
+			$form_result .= "the truncated floating point value is: " . $trucateFloatResult . ".<br>";
+		}
+		if (!empty($farenheight2KelvinResult)) {
+			$form_result .= "the Kelvin value is: " . $farenheight2KelvinResult . ".<br>";
+		}
+		if (!empty($dodecahedronVolumeResult)) {
+			$form_result .= "the dodecahedron volume value is: " . $dodecahedronVolumeResult . ".<br>";
+		}
+		if (!empty($impactVelocityResult)) {
+			$form_result .= "the impact velocity is: " . $impactVelocityResult . ".<br>";
+		}
+		echo $form_result;
+}
 
     public static $header = "<html>\n\t<head>\n\t\t<title>Simple PHP Form Example</title>\n\t</head>\n\t<body>";
     public static $footer = "\n\t</body>\n</html>";
