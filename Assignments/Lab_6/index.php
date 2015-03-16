@@ -29,6 +29,7 @@ if(!isset($_POST['submit'])) {
 }
 else{
 		PageLayout\PageLayout::formResults($trucateFloatResult, $farenheight2KelvinResult, $dodecahedronVolumeResult, $impactVelocityResult);
+		echo PageLayout\PageLayout::$form_layout;
 		}
 
 echo PageLayout\PageLayout::$footer;
